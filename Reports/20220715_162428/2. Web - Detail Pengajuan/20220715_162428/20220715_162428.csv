@@ -1,0 +1,95 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+2. Web - Detail Pengajuan,Chrome 103.0.5060.114,,,2022-07-15 16:24:54,2022-07-15 16:27:08,2m - 14.457s,PASSED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-15 16:24:54,2022-07-15 16:24:59,4.430s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-15 16:24:55,2022-07-15 16:24:58,2.590s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-15 16:24:58,2022-07-15 16:24:58,0.084s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-15 16:24:58,2022-07-15 16:24:58,0.116s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-15 16:24:58,2022-07-15 16:24:58,0.023s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-15 16:24:58,2022-07-15 16:24:58,0.488s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-15 16:24:58,2022-07-15 16:24:58,0.005s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-15 16:24:58,2022-07-15 16:24:58,0.002s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-15 16:24:58,2022-07-15 16:24:59,0.066s,PASSED
+,,,,,,,
+Test Cases/web,Chrome 103.0.5060.114,,,2022-07-15 16:24:59,2022-07-15 16:27:08,2m - 9.482s,PASSED
+robot = new java.awt.Robot(),Chrome 103.0.5060.114,,,2022-07-15 16:25:00,2022-07-15 16:25:00,0.141s,PASSED
+userDir = getProjectDir(),Chrome 103.0.5060.114,,,2022-07-15 16:25:00,2022-07-15 16:25:00,0.002s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-15 16:25:00,2022-07-15 16:25:03,3.066s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-15 16:25:03,2022-07-15 16:25:05,1.985s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 16:25:05,2022-07-15 16:25:10,5.080s,PASSED
+"comment(""Verifikasi Element untuk cek setiap object yang muncul"")",Chrome 103.0.5060.114,,,2022-07-15 16:25:10,2022-07-15 16:25:10,0.061s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/3.3 Status Pengajuan Terbaru""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi List Data Tracking,,2022-07-15 16:25:10,2022-07-15 16:25:11,0.458s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:11,2022-07-15 16:25:14,3.011s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/3.1 Tipe Aplikasi Pengajuan""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Pengajuan,,2022-07-15 16:25:14,2022-07-15 16:25:14,0.375s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:14,2022-07-15 16:25:17,3.013s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/3.4 Tanggal Pengajuan""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Tanggal Pengajuan,,2022-07-15 16:25:17,2022-07-15 16:25:17,0.388s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:17,2022-07-15 16:25:20,3.010s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/3.2 Merk - Model Kendaraan""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Kendaraan yang diajukan,,2022-07-15 16:25:20,2022-07-15 16:25:21,0.380s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:21,2022-07-15 16:25:24,3.012s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/3.5 Status Pengajuan""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Flow Tracking Sampai di ?,,2022-07-15 16:25:24,2022-07-15 16:25:24,0.389s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking List Pengajuan.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 16:25:24,2022-07-15 16:25:25,0.783s,PASSED
+"markPassed(""Screenshoot Web Tracking List Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 16:25:25,2022-07-15 16:25:25,0.015s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 16:25:25,2022-07-15 16:25:30,5.013s,PASSED
+"click(findTestObject(""Status Pengajuan/List Data 1""))",Chrome 103.0.5060.114,Halaman Detail Pengajuan ,,2022-07-15 16:25:30,2022-07-15 16:25:30,0.512s,PASSED
+"comment(""Info Detail List Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 16:25:30,2022-07-15 16:25:30,0.004s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:30,2022-07-15 16:25:33,3.008s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.2 Info Pengajuan""), 0)",Chrome 103.0.5060.114,Verifikasi Status Pengajuan Sampai Mana,,2022-07-15 16:25:33,2022-07-15 16:25:34,0.396s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:34,2022-07-15 16:25:37,3.005s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.1 Tanggal Pengajuan""), 0)",Chrome 103.0.5060.114,verifikasi tanggal pengajuan,,2022-07-15 16:25:37,2022-07-15 16:25:37,0.407s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:37,2022-07-15 16:25:40,3.006s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.2 Info Pengajuan""), 0)",Chrome 103.0.5060.114,Verifikasi Button Info,,2022-07-15 16:25:40,2022-07-15 16:25:41,0.403s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:41,2022-07-15 16:25:44,3.014s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.4 Request ID""), 0)",Chrome 103.0.5060.114,Verifikasi No Request ID,,2022-07-15 16:25:44,2022-07-15 16:25:44,0.395s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:44,2022-07-15 16:25:47,3.013s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.5 Nama Pengaju""), 0)",Chrome 103.0.5060.114,Verifikasi nama yang mengajukan,,2022-07-15 16:25:47,2022-07-15 16:25:47,0.377s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:47,2022-07-15 16:25:51,3.014s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.6 Merk Kendaraan""), 0)",Chrome 103.0.5060.114,verifikasi merk kendaraan,,2022-07-15 16:25:51,2022-07-15 16:25:51,0.397s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:51,2022-07-15 16:25:54,3.015s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.7 Kondisi Kendaraan""), 0)",Chrome 103.0.5060.114,verifikasi kondisi kendaraan,,2022-07-15 16:25:54,2022-07-15 16:25:54,0.394s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:54,2022-07-15 16:25:57,3.014s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.8 Info Tanggal Pengajuan""), 0)",Chrome 103.0.5060.114,verifikasi tanggal pengajuan dalam list kendaraan,,2022-07-15 16:25:57,2022-07-15 16:25:58,0.390s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:25:58,2022-07-15 16:26:01,3.020s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.9 Model Kendaraan""), 0)",Chrome 103.0.5060.114,verifikasi model kendaraan,,2022-07-15 16:26:01,2022-07-15 16:26:01,0.398s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:01,2022-07-15 16:26:04,3.012s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.10 Nomber Police""), 0)",Chrome 103.0.5060.114,verifikasi nomber polisi,,2022-07-15 16:26:04,2022-07-15 16:26:05,0.408s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:05,2022-07-15 16:26:08,3.018s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking Halaman Detail Pengajuan.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 16:26:08,2022-07-15 16:26:08,0.627s,PASSED
+"markPassed(""Screenshoot Web Tracking Halaman Detail Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 16:26:08,2022-07-15 16:26:08,0.003s,PASSED
+"comment(""Halaman Detail sampai mana"")",Chrome 103.0.5060.114,,,2022-07-15 16:26:08,2022-07-15 16:26:08,0.004s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:08,2022-07-15 16:26:11,3.016s,PASSED
+"scrollToElement(findTestObject(""Status Pengajuan/1.15 Info Realisasi""), 0)",Chrome 103.0.5060.114,,,2022-07-15 16:26:11,2022-07-15 16:26:12,0.447s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.11 Info Pengajuan Received""), 0)",Chrome 103.0.5060.114,verifikasi pengajuan awal,,2022-07-15 16:26:12,2022-07-15 16:26:12,0.403s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:12,2022-07-15 16:26:15,3.007s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.12 Info Progress""), 0)",Chrome 103.0.5060.114,verifikasi in progress,,2022-07-15 16:26:15,2022-07-15 16:26:15,0.379s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:15,2022-07-15 16:26:18,3.013s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.13 Info Menunggu Approve""), 0)",Chrome 103.0.5060.114,verifikasi mengunggu di approve,,2022-07-15 16:26:18,2022-07-15 16:26:19,0.393s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:19,2022-07-15 16:26:22,3.004s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.14 Info Tagihan Masuk""), 0)",Chrome 103.0.5060.114,verifikasi tagihan masuk,,2022-07-15 16:26:22,2022-07-15 16:26:22,0.393s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:22,2022-07-15 16:26:25,3.006s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/1.15 Info Realisasi""), 0)",Chrome 103.0.5060.114,verifikasi bahwa pengajuan sudah sampai realisasi,,2022-07-15 16:26:25,2022-07-15 16:26:26,0.389s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 16:26:26,2022-07-15 16:26:31,5.014s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking Halaman Detail Pengajuan sampai mana.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 16:26:31,2022-07-15 16:26:31,0.585s,PASSED
+"markPassed(""Screenshoot Web Tracking Halaman Detail Pengajuan sampai mana"")",Chrome 103.0.5060.114,,,2022-07-15 16:26:31,2022-07-15 16:26:31,0.003s,PASSED
+"comment(""Web Tracking Info setiap pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 16:26:31,2022-07-15 16:26:31,0.003s,PASSED
+"scrollToElement(findTestObject(""Status Pengajuan/1.3 Status Pengajuan""), 0)",Chrome 103.0.5060.114,,,2022-07-15 16:26:31,2022-07-15 16:26:32,0.463s,PASSED
+"click(findTestObject(""Status Pengajuan/1.2 Info Pengajuan""))",Chrome 103.0.5060.114,,,2022-07-15 16:26:32,2022-07-15 16:26:32,0.469s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:32,2022-07-15 16:26:35,3.015s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.1 Info Status Pengajuan""), 0)",Chrome 103.0.5060.114,Verifikasi Info status pengajuan,,2022-07-15 16:26:35,2022-07-15 16:26:36,0.409s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:36,2022-07-15 16:26:39,3.016s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.2 Info Aplikasi Diterima""), 0)",Chrome 103.0.5060.114,Info aplikasi diterima,,2022-07-15 16:26:39,2022-07-15 16:26:39,0.378s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:39,2022-07-15 16:26:42,3.007s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.3 Info Progress Aplikasi""), 0)",Chrome 103.0.5060.114,Info progress aplikasi,,2022-07-15 16:26:42,2022-07-15 16:26:42,0.378s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:42,2022-07-15 16:26:45,3.007s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.4 Info Menunggu Approve""), 0)",Chrome 103.0.5060.114,Info menunggu approve,,2022-07-15 16:26:45,2022-07-15 16:26:46,0.377s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:46,2022-07-15 16:26:49,3.009s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.5 Info Tagihan Masuk""), 0)",Chrome 103.0.5060.114,Info tagihan masuk,,2022-07-15 16:26:49,2022-07-15 16:26:49,0.378s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:49,2022-07-15 16:26:52,3.013s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.6 Info Realisasi""), 0)",Chrome 103.0.5060.114,Info realisasi,,2022-07-15 16:26:52,2022-07-15 16:26:53,0.373s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:53,2022-07-15 16:26:56,3.008s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.8 Info Pengajuan Tidak Diterima""), 0)",Chrome 103.0.5060.114,Info pengajuan tidak diterima,,2022-07-15 16:26:56,2022-07-15 16:26:56,0.378s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:56,2022-07-15 16:26:59,3.016s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/2.7 Info Pengajuan Dicancel""), 0)",Chrome 103.0.5060.114,Info pengajuan dicancel,,2022-07-15 16:26:59,2022-07-15 16:26:59,0.395s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 16:26:59,2022-07-15 16:27:02,3.016s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking Info Pengajuan.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 16:27:02,2022-07-15 16:27:03,0.622s,PASSED
+"markPassed(""Screenshoot Web Tracking Info Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 16:27:03,2022-07-15 16:27:03,0.001s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 16:27:03,2022-07-15 16:27:08,5.020s,PASSED

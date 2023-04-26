@@ -1,0 +1,61 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1. Web - Setting,Chrome 103.0.5060.114,,,2022-07-15 15:29:57,2022-07-15 15:30:59,1m - 1.537s,PASSED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-15 15:29:57,2022-07-15 15:30:02,4.377s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-15 15:29:59,2022-07-15 15:30:02,2.949s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-15 15:30:02,2022-07-15 15:30:02,0.027s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-15 15:30:02,2022-07-15 15:30:02,0.034s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-15 15:30:02,2022-07-15 15:30:02,0.022s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-15 15:30:02,2022-07-15 15:30:02,0.194s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-15 15:30:02,2022-07-15 15:30:02,0.006s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-15 15:30:02,2022-07-15 15:30:02,0.002s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-15 15:30:02,2022-07-15 15:30:02,0.066s,PASSED
+,,,,,,,
+Test Cases/web - setting,Chrome 103.0.5060.114,,,2022-07-15 15:30:02,2022-07-15 15:30:59,56.653s,PASSED
+robot = new java.awt.Robot(),Chrome 103.0.5060.114,,,2022-07-15 15:30:03,2022-07-15 15:30:03,0.398s,PASSED
+userDir = getProjectDir(),Chrome 103.0.5060.114,,,2022-07-15 15:30:03,2022-07-15 15:30:03,0.002s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-15 15:30:03,2022-07-15 15:30:06,2.968s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-15 15:30:06,2022-07-15 15:30:07,0.773s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 15:30:07,2022-07-15 15:30:12,5.070s,PASSED
+"comment(""Setting untuk data pengajuan yang ditampilkan"")",Chrome 103.0.5060.114,,,2022-07-15 15:30:12,2022-07-15 15:30:12,0.063s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.1 Dropdown Filter By""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:12,2022-07-15 15:30:13,0.571s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 15:30:13,2022-07-15 15:30:16,3.018s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Setting.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 15:30:16,2022-07-15 15:30:16,0.832s,PASSED
+"markPassed(""Screenshoot Web Setting"")",Chrome 103.0.5060.114,,,2022-07-15 15:30:16,2022-07-15 15:30:16,0.013s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.4 button_Terlama""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:16,2022-07-15 15:30:17,0.537s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Short Terlama.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 15:30:17,2022-07-15 15:30:18,0.637s,PASSED
+"markPassed(""Screenshoot Short Terlama"")",Chrome 103.0.5060.114,,,2022-07-15 15:30:18,2022-07-15 15:30:18,0.003s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.3 button_Terbaru""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:18,2022-07-15 15:30:18,0.486s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:18,2022-07-15 15:30:20,2.013s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.15 Input Semua Transaksi""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:20,2022-07-15 15:30:21,0.549s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:21,2022-07-15 15:30:23,2.013s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.8 Checkbox aplikasi pembiayaan""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:23,2022-07-15 15:30:23,0.584s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:23,2022-07-15 15:30:25,2.015s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.9 Upgrade Asuransi""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:25,2022-07-15 15:30:26,0.518s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:26,2022-07-15 15:30:28,2.021s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.10 Renewal Asuransi""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:28,2022-07-15 15:30:28,0.544s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:28,2022-07-15 15:30:30,2.012s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.10 Pengurusan BPKB""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:30,2022-07-15 15:30:31,0.554s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:31,2022-07-15 15:30:33,2.020s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Semua transaksi.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 15:30:33,2022-07-15 15:30:34,0.761s,PASSED
+"markPassed(""Screenshoot Semua transaksi"")",Chrome 103.0.5060.114,,,2022-07-15 15:30:34,2022-07-15 15:30:34,0.003s,PASSED
+"scrollToElement(findTestObject(""Filter By/Page_BcafTracking/5.2 button Terapkan""), 0)",Chrome 103.0.5060.114,,,2022-07-15 15:30:34,2022-07-15 15:30:34,0.488s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:34,2022-07-15 15:30:36,2.009s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Status.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 15:30:36,2022-07-15 15:30:37,0.753s,PASSED
+"markPassed(""Screenshoot Status"")",Chrome 103.0.5060.114,,,2022-07-15 15:30:37,2022-07-15 15:30:37,0.002s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.16 Input Semua Status""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:37,2022-07-15 15:30:37,0.529s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:37,2022-07-15 15:30:39,2.016s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.11 Checkbox Received""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:39,2022-07-15 15:30:40,0.583s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:40,2022-07-15 15:30:42,2.026s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.12 checkbox inprogress""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:42,2022-07-15 15:30:43,0.536s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:43,2022-07-15 15:30:45,2.012s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.13 checkbox wait approval""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:45,2022-07-15 15:30:45,0.582s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:45,2022-07-15 15:30:47,2.019s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.17 checkbox berhasil""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:47,2022-07-15 15:30:48,0.512s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:48,2022-07-15 15:30:50,2.021s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.14 checkbox Gagal-dibatalkan-expired""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:50,2022-07-15 15:30:50,0.499s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-15 15:30:50,2022-07-15 15:30:52,2.005s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Checkbox Final.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 15:30:52,2022-07-15 15:30:53,0.650s,PASSED
+"markPassed(""Screenshoot Checkbox Final"")",Chrome 103.0.5060.114,,,2022-07-15 15:30:53,2022-07-15 15:30:53,0.001s,PASSED
+"click(findTestObject(""Filter By/Page_BcafTracking/5.2 button Terapkan""))",Chrome 103.0.5060.114,,,2022-07-15 15:30:53,2022-07-15 15:30:54,0.576s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 15:30:54,2022-07-15 15:30:59,5.015s,PASSED

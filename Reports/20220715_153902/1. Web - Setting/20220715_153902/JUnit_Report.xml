@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="1. Web - Setting" time="67.561" tests="2" failures="0" errors="0">
+   <testsuite name="1. Web - Setting" tests="2" failures="0" errors="0" time="67.561" skipped="0" timestamp="2022-07-15 15:39:22" hostname="Nia Yusniati - Apandi.mshome.net" id="Test Suites/1. Web - Setting">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_153902\\1. Web - Setting\\20220715_153902"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_153902\\1. Web - Setting\\20220715_153902\\execution0.log"/>
+         <property name="attachments" value="C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Web Setting.png, C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Short Terlama.png, C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Semua transaksi.png, C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Status.png, C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Checkbox Final.png, C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Tampilan List Pengajuan.png"/>
+         <property name="hostName" value="Nia Yusniati - Apandi.mshome.net"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+         <property name="browser" value="Chrome 103.0.5060.114"/>
+         <property name="hostAddress" value="192.168.137.70"/>
+         <property name="sessionId" value="624cb49769a4b47067e37212e726a122"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/api" time="4.647" classname="Test Cases/api" status="PASSED">
+         <system-out><![CDATA[2022-07-15 15:39:23 - [TEST_CASE][PASSED] - Test Cases/api: Test Cases/api
+
+2022-07-15 15:39:24 - [TEST_STEP][PASSED] - request = sendRequest(findTestObject("get request id", ["nik":nik])): Send request successfully
+
+2022-07-15 15:39:27 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Reports\20220715_153902\1. Web - Setting\20220715_153902\requests\main\0.har
+
+2022-07-15 15:39:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-15 15:39:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-15 15:39:27 - [TEST_STEP][PASSED] - get_token = slurper.parseText(request.getResponseBodyContent()): null
+
+2022-07-15 15:39:27 - [TEST_STEP][PASSED] - req_id = requestId: null
+
+2022-07-15 15:39:27 - [TEST_STEP][PASSED] - request_id = req_id: null
+
+2022-07-15 15:39:27 - [TEST_STEP][PASSED] - println("token is :" + request_id): null
+
+2022-07-15 15:39:27 - [TEST_STEP][PASSED] - response_token = request.getResponseText(): null
+
+2022-07-15 15:39:27 - [TEST_STEP][PASSED] - logInfo($response_token): {"errorCode":"00","errorMessage":"sukses","requestId":"fJpFrND1UOUvOprt1MwLxz1j9YMbM5HaCtos92YuxKNCuScj0d/TjV2DAx8Sq3S8"}
+
+2022-07-15 15:39:27 - [MESSAGE][INFO] - {"errorCode":"00","errorMessage":"sukses","requestId":"fJpFrND1UOUvOprt1MwLxz1j9YMbM5HaCtos92YuxKNCuScj0d/TjV2DAx8Sq3S8"}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/web - setting" time="60.941" classname="Test Cases/web - setting" status="PASSED">
+         <system-out><![CDATA[2022-07-15 15:39:27 - [TEST_CASE][PASSED] - Test Cases/web - setting: Test Cases/web - setting
+
+2022-07-15 15:39:28 - [TEST_STEP][PASSED] - robot = new java.awt.Robot(): null
+
+2022-07-15 15:39:28 - [TEST_STEP][PASSED] - userDir = getProjectDir(): null
+
+2022-07-15 15:39:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-15 15:39:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-15 15:39:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-15 15:39:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-15 15:39:31 - [TEST_STEP][PASSED] - navigateToUrl("https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=" + request_id): Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=fJpFrND1UOUvOprt1MwLxz1j9YMbM5HaCtos92YuxKNCuScj0d/TjV2DAx8Sq3S8' successfully
+
+2022-07-15 15:39:33 - [MESSAGE][PASSED] - Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=fJpFrND1UOUvOprt1MwLxz1j9YMbM5HaCtos92YuxKNCuScj0d/TjV2DAx8Sq3S8' successfully
+
+2022-07-15 15:39:33 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-15 15:39:38 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-07-15 15:39:38 - [TEST_STEP][PASSED] - comment("Setting untuk data pengajuan yang ditampilkan"): Setting untuk data pengajuan yang ditampilkan
+
+2022-07-15 15:39:38 - [MESSAGE][INFO] - Setting untuk data pengajuan yang ditampilkan
+
+2022-07-15 15:39:38 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.1 Dropdown Filter By")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.1 Dropdown Filter By' is clicked on
+
+2022-07-15 15:39:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.1 Dropdown Filter By' is clicked on
+
+2022-07-15 15:39:39 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 15:39:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 15:39:42 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + "Screenshoot Web Setting.png"): Taking screenshot successfully
+
+2022-07-15 15:39:42 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 15:39:43 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Web Setting.png]]
+
+2022-07-15 15:39:43 - [TEST_STEP][PASSED] - markPassed("Screenshoot Web Setting"): Screenshoot Web Setting
+
+2022-07-15 15:39:43 - [MESSAGE][PASSED] - Screenshoot Web Setting
+
+2022-07-15 15:39:43 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.4 button_Terlama")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.4 button_Terlama' is clicked on
+
+2022-07-15 15:39:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.4 button_Terlama' is clicked on
+
+2022-07-15 15:39:43 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + "Screenshoot Short Terlama.png"): Taking screenshot successfully
+
+2022-07-15 15:39:44 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 15:39:44 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Short Terlama.png]]
+
+2022-07-15 15:39:44 - [TEST_STEP][PASSED] - markPassed("Screenshoot Short Terlama"): Screenshoot Short Terlama
+
+2022-07-15 15:39:44 - [MESSAGE][PASSED] - Screenshoot Short Terlama
+
+2022-07-15 15:39:44 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.3 button_Terbaru")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.3 button_Terbaru' is clicked on
+
+2022-07-15 15:39:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.3 button_Terbaru' is clicked on
+
+2022-07-15 15:39:44 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:39:46 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:39:46 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.15 Input Semua Transaksi")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.15 Input Semua Transaksi' is clicked on
+
+2022-07-15 15:39:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.15 Input Semua Transaksi' is clicked on
+
+2022-07-15 15:39:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:39:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:39:49 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.8 Checkbox aplikasi pembiayaan")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.8 Checkbox aplikasi pembiayaan' is clicked on
+
+2022-07-15 15:39:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.8 Checkbox aplikasi pembiayaan' is clicked on
+
+2022-07-15 15:39:49 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:39:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:39:51 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.9 Upgrade Asuransi")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.9 Upgrade Asuransi' is clicked on
+
+2022-07-15 15:39:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.9 Upgrade Asuransi' is clicked on
+
+2022-07-15 15:39:52 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:39:54 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:39:54 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.10 Renewal Asuransi")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.10 Renewal Asuransi' is clicked on
+
+2022-07-15 15:39:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.10 Renewal Asuransi' is clicked on
+
+2022-07-15 15:39:55 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:39:57 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:39:57 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.10 Pengurusan BPKB")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.10 Pengurusan BPKB' is clicked on
+
+2022-07-15 15:39:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.10 Pengurusan BPKB' is clicked on
+
+2022-07-15 15:39:57 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:39:59 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:39:59 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + "Screenshoot Semua transaksi.png"): Taking screenshot successfully
+
+2022-07-15 15:40:00 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 15:40:00 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Semua transaksi.png]]
+
+2022-07-15 15:40:00 - [TEST_STEP][PASSED] - markPassed("Screenshoot Semua transaksi"): Screenshoot Semua transaksi
+
+2022-07-15 15:40:00 - [MESSAGE][PASSED] - Screenshoot Semua transaksi
+
+2022-07-15 15:40:00 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Filter By/Page_BcafTracking/5.2 button Terapkan"), 0): Scroll to object 'Object Repository/Filter By/Page_BcafTracking/5.2 button Terapkan' successfully
+
+2022-07-15 15:40:00 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 15:40:00 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Filter By/Page_BcafTracking/5.2 button Terapkan' successfully
+
+2022-07-15 15:40:00 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:40:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:40:02 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + "Screenshoot Status.png"): Taking screenshot successfully
+
+2022-07-15 15:40:03 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 15:40:03 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Status.png]]
+
+2022-07-15 15:40:03 - [TEST_STEP][PASSED] - markPassed("Screenshoot Status"): Screenshoot Status
+
+2022-07-15 15:40:03 - [MESSAGE][PASSED] - Screenshoot Status
+
+2022-07-15 15:40:03 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.16 Input Semua Status")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.16 Input Semua Status' is clicked on
+
+2022-07-15 15:40:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.16 Input Semua Status' is clicked on
+
+2022-07-15 15:40:03 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:40:05 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:40:05 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.11 Checkbox Received")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.11 Checkbox Received' is clicked on
+
+2022-07-15 15:40:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.11 Checkbox Received' is clicked on
+
+2022-07-15 15:40:06 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:40:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:40:08 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.12 checkbox inprogress")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.12 checkbox inprogress' is clicked on
+
+2022-07-15 15:40:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.12 checkbox inprogress' is clicked on
+
+2022-07-15 15:40:09 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:40:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:40:11 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.13 checkbox wait approval")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.13 checkbox wait approval' is clicked on
+
+2022-07-15 15:40:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.13 checkbox wait approval' is clicked on
+
+2022-07-15 15:40:11 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:40:13 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:40:13 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.17 checkbox berhasil")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.17 checkbox berhasil' is clicked on
+
+2022-07-15 15:40:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.17 checkbox berhasil' is clicked on
+
+2022-07-15 15:40:14 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:40:16 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:40:16 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.14 checkbox Gagal-dibatalkan-expired")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.14 checkbox Gagal-dibatalkan-expired' is clicked on
+
+2022-07-15 15:40:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.14 checkbox Gagal-dibatalkan-expired' is clicked on
+
+2022-07-15 15:40:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-07-15 15:40:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-07-15 15:40:19 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + "Screenshoot Checkbox Final.png"): Taking screenshot successfully
+
+2022-07-15 15:40:19 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 15:40:19 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Checkbox Final.png]]
+
+2022-07-15 15:40:19 - [TEST_STEP][PASSED] - markPassed("Screenshoot Checkbox Final"): Screenshoot Checkbox Final
+
+2022-07-15 15:40:19 - [MESSAGE][PASSED] - Screenshoot Checkbox Final
+
+2022-07-15 15:40:19 - [TEST_STEP][PASSED] - click(findTestObject("Filter By/Page_BcafTracking/5.2 button Terapkan")): Object: 'Object Repository/Filter By/Page_BcafTracking/5.2 button Terapkan' is clicked on
+
+2022-07-15 15:40:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Filter By/Page_BcafTracking/5.2 button Terapkan' is clicked on
+
+2022-07-15 15:40:20 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 15:40:23 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 15:40:23 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + "Screenshoot Tampilan List Pengajuan.png"): Taking screenshot successfully
+
+2022-07-15 15:40:23 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 15:40:23 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Screenshoot\keyes\keyes-Web TrackingScreenshoot Tampilan List Pengajuan.png]]
+
+2022-07-15 15:40:23 - [TEST_STEP][PASSED] - markPassed("Screenshoot Tampilan List Pengajuan"): Screenshoot Tampilan List Pengajuan
+
+2022-07-15 15:40:23 - [MESSAGE][PASSED] - Screenshoot Tampilan List Pengajuan
+
+2022-07-15 15:40:23 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-15 15:40:28 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-15 15:39:22 - [TEST_SUITE][PASSED] - 1. Web - Setting: Test Cases/web - setting]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1,Chrome 103.0.5060.114,,,2022-07-14 16:21:09,2022-07-14 16:21:36,27.210s,FAILED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-14 16:21:10,2022-07-14 16:21:18,7.738s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-14 16:21:11,2022-07-14 16:21:17,5.640s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-14 16:21:17,2022-07-14 16:21:17,0.040s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-14 16:21:17,2022-07-14 16:21:17,0.057s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-14 16:21:17,2022-07-14 16:21:17,0.033s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-14 16:21:17,2022-07-14 16:21:17,0.237s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 16:21:17,2022-07-14 16:21:17,0.010s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-14 16:21:17,2022-07-14 16:21:17,0.003s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-14 16:21:17,2022-07-14 16:21:18,0.104s,PASSED
+,,,,,,,
+Test Cases/web,Chrome 103.0.5060.114,,,2022-07-14 16:21:18,2022-07-14 16:21:36,18.516s,FAILED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-14 16:21:19,2022-07-14 16:21:23,4.675s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 16:21:23,2022-07-14 16:21:25,1.773s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-14 16:21:25,2022-07-14 16:21:30,5.197s,PASSED
+"comment(""Verifikasi Element untuk cek setiap object yang muncul"")",Chrome 103.0.5060.114,,,2022-07-14 16:21:30,2022-07-14 16:21:30,0.070s,PASSED
+"verifyElementNotChecked(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022""), 0, OPTIONAL)",Chrome 103.0.5060.114,,,2022-07-14 16:21:30,2022-07-14 16:21:31,0.609s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 16:21:31,2022-07-14 16:21:34,3.017s,PASSED
+"verifyImagePresent(findTestObject(""Verify2/Page_BcafTracking/img_Filter By_rounded-circle img-fluid mx-auto my-3 d-block image-icon""), STOP_ON_FAILURE)",Chrome 103.0.5060.114,,,2022-07-14 16:21:34,2022-07-14 16:21:36,2.106s,FAILED

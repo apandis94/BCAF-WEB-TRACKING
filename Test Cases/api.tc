@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>api</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f93b5ea9-e210-4906-a678-5fc7161b5147</testCaseGuid>
+   <variable>
+      <defaultValue>'023869720091000'</defaultValue>
+      <description></description>
+      <id>da90f833-6e1d-4441-a29c-6e3b5e83539b</id>
+      <masked>false</masked>
+      <name>nik</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b9aea092-dc57-490b-9171-e2e69d32c64f</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

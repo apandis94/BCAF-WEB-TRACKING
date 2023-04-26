@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1,Chrome 103.0.5060.114,,,2022-07-14 14:14:41,2022-07-14 14:14:56,14.574s,FAILED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-14 14:14:42,2022-07-14 14:14:46,3.789s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-14 14:14:43,2022-07-14 14:14:45,2.459s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-14 14:14:45,2022-07-14 14:14:45,0.025s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-14 14:14:45,2022-07-14 14:14:45,0.035s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-14 14:14:45,2022-07-14 14:14:45,0.022s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-14 14:14:45,2022-07-14 14:14:45,0.154s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 14:14:45,2022-07-14 14:14:45,0.005s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-14 14:14:45,2022-07-14 14:14:45,0.002s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-14 14:14:45,2022-07-14 14:14:46,0.059s,PASSED
+,,,,,,,
+Test Cases/web,Chrome 103.0.5060.114,,,2022-07-14 14:14:46,2022-07-14 14:14:56,10.258s,FAILED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-14 14:14:46,2022-07-14 14:14:49,2.884s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 14:14:49,2022-07-14 14:14:50,0.831s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-14 14:14:50,2022-07-14 14:14:55,5.076s,PASSED
+"verifyElementChecked(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022""), 0)",Chrome 103.0.5060.114,,,2022-07-14 14:14:55,2022-07-14 14:14:56,0.776s,FAILED

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>1. Web - Setting</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>48e686ca-387e-4fd9-ad8c-d27a49feebec</testSuiteGuid>
+   <testCaseLink>
+      <guid>0a45e9f3-cf64-405c-ab1b-7bc3655566c0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/api</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>da90f833-6e1d-4441-a29c-6e3b5e83539b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b9aea092-dc57-490b-9171-e2e69d32c64f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>89ae33f6-949f-453e-a4ee-52de078180c3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/web - setting</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b9adcd28-eea3-49f6-b74c-72c137782fcc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5d5d91dc-6259-4671-97bc-5ae3ae8ee945</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

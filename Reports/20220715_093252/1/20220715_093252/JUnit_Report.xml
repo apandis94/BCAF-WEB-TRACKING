@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="1" time="96.547" tests="2" failures="0" errors="0">
+   <testsuite name="1" tests="2" failures="0" errors="0" time="96.547" skipped="0" timestamp="2022-07-15 09:33:21" hostname="Nia Yusniati - Apandi.mshome.net" id="Test Suites/1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_093252\\1\\20220715_093252"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_093252\\1\\20220715_093252\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_093252\\1\\20220715_093252\\1657852429865.png, C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_093252\\1\\20220715_093252\\1657852473241.png"/>
+         <property name="hostName" value="Nia Yusniati - Apandi.mshome.net"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+         <property name="browser" value="Chrome 103.0.5060.114"/>
+         <property name="hostAddress" value="192.168.137.70"/>
+         <property name="sessionId" value="aa1f14fc8dc8fd07bb9ffa0b07a8e5a3"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/api" time="3.758" classname="Test Cases/api" status="PASSED">
+         <system-out><![CDATA[2022-07-15 09:33:21 - [TEST_CASE][PASSED] - Test Cases/api: Test Cases/api
+
+2022-07-15 09:33:22 - [TEST_STEP][PASSED] - request = sendRequest(findTestObject("get request id", ["nik":nik])): Send request successfully
+
+2022-07-15 09:33:25 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Reports\20220715_093252\1\20220715_093252\requests\main\0.har
+
+2022-07-15 09:33:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-15 09:33:25 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-15 09:33:25 - [TEST_STEP][PASSED] - get_token = slurper.parseText(request.getResponseBodyContent()): null
+
+2022-07-15 09:33:25 - [TEST_STEP][PASSED] - req_id = requestId: null
+
+2022-07-15 09:33:25 - [TEST_STEP][PASSED] - request_id = req_id: null
+
+2022-07-15 09:33:25 - [TEST_STEP][PASSED] - println("token is :" + request_id): null
+
+2022-07-15 09:33:25 - [TEST_STEP][PASSED] - response_token = request.getResponseText(): null
+
+2022-07-15 09:33:25 - [TEST_STEP][PASSED] - logInfo($response_token): {"errorCode":"00","errorMessage":"sukses","requestId":"wSTQ6MT1FwzGpxqPCrmyRq8DxDPTPOxKyuTfDWV0d74A5grciSt7zfICoRwO2+Yb"}
+
+2022-07-15 09:33:25 - [MESSAGE][INFO] - {"errorCode":"00","errorMessage":"sukses","requestId":"wSTQ6MT1FwzGpxqPCrmyRq8DxDPTPOxKyuTfDWV0d74A5grciSt7zfICoRwO2+Yb"}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/web" time="90.828" classname="Test Cases/web" status="PASSED">
+         <system-out><![CDATA[2022-07-15 09:33:25 - [TEST_CASE][PASSED] - Test Cases/web: Test Cases/web
+
+2022-07-15 09:33:26 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-15 09:33:26 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-15 09:33:26 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-15 09:33:29 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-15 09:33:29 - [TEST_STEP][PASSED] - navigateToUrl("https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=" + request_id): Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=wSTQ6MT1FwzGpxqPCrmyRq8DxDPTPOxKyuTfDWV0d74A5grciSt7zfICoRwO2+Yb' successfully
+
+2022-07-15 09:33:30 - [MESSAGE][PASSED] - Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=wSTQ6MT1FwzGpxqPCrmyRq8DxDPTPOxKyuTfDWV0d74A5grciSt7zfICoRwO2+Yb' successfully
+
+2022-07-15 09:33:30 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-15 09:33:35 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-07-15 09:33:35 - [TEST_STEP][PASSED] - comment("Verifikasi Element untuk cek setiap object yang muncul"): Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-15 09:33:35 - [MESSAGE][INFO] - Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-15 09:33:35 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is present
+
+2022-07-15 09:33:35 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:33:36 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is present
+
+2022-07-15 09:33:36 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:33:39 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:33:39 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan' is present
+
+2022-07-15 09:33:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:33:39 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan' is present
+
+2022-07-15 09:33:39 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:33:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:33:42 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_14 Jul 2022"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022' is present
+
+2022-07-15 09:33:42 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:33:43 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022' is present
+
+2022-07-15 09:33:43 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:33:46 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:33:46 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Toyota - New avanza"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is present
+
+2022-07-15 09:33:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:33:46 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is present
+
+2022-07-15 09:33:46 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:33:49 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:33:49 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/span_Received"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/span_Received' is present
+
+2022-07-15 09:33:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:33:49 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/span_Received' is present
+
+2022-07-15 09:33:49 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+2022-07-15 09:33:50 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 09:33:50 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_093252\\1\\20220715_093252\\1657852429865.png]]
+
+2022-07-15 09:33:50 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-15 09:33:55 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-07-15 09:33:55 - [TEST_STEP][PASSED] - click(findTestObject("Verify2/Page_BcafTracking/div_Toyota - New avanza")): Object: 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is clicked on
+
+2022-07-15 09:33:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is clicked on
+
+2022-07-15 09:33:56 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:33:59 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:33:59 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/i_Received_far fa-question-circle fs-16"), 0): Object 'Object Repository/Status Pengajuan/i_Received_far fa-question-circle fs-16' is present
+
+2022-07-15 09:33:59 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:33:59 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/i_Received_far fa-question-circle fs-16' is present
+
+2022-07-15 09:33:59 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:02 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_14 Jul 2022  0134"), 0): Object 'Object Repository/Status Pengajuan/div_14 Jul 2022  0134' is present
+
+2022-07-15 09:34:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:02 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_14 Jul 2022  0134' is present
+
+2022-07-15 09:34:02 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:05 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/i_Received_far fa-question-circle fs-16"), 0): Object 'Object Repository/Status Pengajuan/i_Received_far fa-question-circle fs-16' is present
+
+2022-07-15 09:34:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:06 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/i_Received_far fa-question-circle fs-16' is present
+
+2022-07-15 09:34:06 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:09 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:09 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_Request ID220700160"), 0): Object 'Object Repository/Status Pengajuan/div_Request ID220700160' is present
+
+2022-07-15 09:34:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:09 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_Request ID220700160' is present
+
+2022-07-15 09:34:09 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:12 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:12 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_Nama Pengaju  BILLY BUMBLEBEE SIFUIAN"), 0): Object 'Object Repository/Status Pengajuan/div_Nama Pengaju  BILLY BUMBLEBEE SIFUIAN' is present
+
+2022-07-15 09:34:12 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:13 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_Nama Pengaju  BILLY BUMBLEBEE SIFUIAN' is present
+
+2022-07-15 09:34:13 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:16 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:16 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_Merk Kendaraan  Toyota"), 0): Object 'Object Repository/Status Pengajuan/div_Merk Kendaraan  Toyota' is present
+
+2022-07-15 09:34:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:16 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_Merk Kendaraan  Toyota' is present
+
+2022-07-15 09:34:16 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:19 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:19 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_Kondisi Kendaraan  New"), 0): Object 'Object Repository/Status Pengajuan/div_Kondisi Kendaraan  New' is present
+
+2022-07-15 09:34:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:19 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_Kondisi Kendaraan  New' is present
+
+2022-07-15 09:34:19 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:22 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:23 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_Tanggal Pengajuan  14 Jul 2022  0134"), 0): Object 'Object Repository/Status Pengajuan/div_Tanggal Pengajuan  14 Jul 2022  0134' is present
+
+2022-07-15 09:34:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:23 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_Tanggal Pengajuan  14 Jul 2022  0134' is present
+
+2022-07-15 09:34:23 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:26 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:26 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_Model Kendaraan  New avanza"), 0): Object 'Object Repository/Status Pengajuan/div_Model Kendaraan  New avanza' is present
+
+2022-07-15 09:34:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:26 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_Model Kendaraan  New avanza' is present
+
+2022-07-15 09:34:26 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:29 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:29 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/div_Nomor Polisi"), 0): Object 'Object Repository/Status Pengajuan/div_Nomor Polisi' is present
+
+2022-07-15 09:34:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:30 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/div_Nomor Polisi' is present
+
+2022-07-15 09:34:30 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:33 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:33 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+2022-07-15 09:34:33 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-15 09:34:33 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220715_093252\\1\\20220715_093252\\1657852473241.png]]
+
+2022-07-15 09:34:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:36 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Status Pengajuan/ul_Realisasi"), 0): Scroll to object 'Object Repository/Status Pengajuan/ul_Realisasi' successfully
+
+2022-07-15 09:34:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:37 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Status Pengajuan/ul_Realisasi' successfully
+
+2022-07-15 09:34:37 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/ul_Received 14 07 2022 0134 WIB"), 0): Object 'Object Repository/Status Pengajuan/ul_Received 14 07 2022 0134 WIB' is present
+
+2022-07-15 09:34:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:37 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/ul_Received 14 07 2022 0134 WIB' is present
+
+2022-07-15 09:34:37 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:40 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/ul_In Progress"), 0): Object 'Object Repository/Status Pengajuan/ul_In Progress' is present
+
+2022-07-15 09:34:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:41 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/ul_In Progress' is present
+
+2022-07-15 09:34:41 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:44 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/ul_Waiting Approval"), 0): Object 'Object Repository/Status Pengajuan/ul_Waiting Approval' is present
+
+2022-07-15 09:34:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:44 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/ul_Waiting Approval' is present
+
+2022-07-15 09:34:44 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:47 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/ul_Tagihan Masuk"), 0): Object 'Object Repository/Status Pengajuan/ul_Tagihan Masuk' is present
+
+2022-07-15 09:34:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:47 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/ul_Tagihan Masuk' is present
+
+2022-07-15 09:34:47 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-15 09:34:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-15 09:34:50 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Status Pengajuan/ul_Realisasi"), 0): Object 'Object Repository/Status Pengajuan/ul_Realisasi' is present
+
+2022-07-15 09:34:51 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-15 09:34:51 - [MESSAGE][PASSED] - Object 'Object Repository/Status Pengajuan/ul_Realisasi' is present
+
+2022-07-15 09:34:51 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-15 09:34:56 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-15 09:33:21 - [TEST_SUITE][PASSED] - 1: Test Cases/web]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1,Chrome 103.0.5060.114,,,2022-07-14 15:28:17,2022-07-14 15:30:32,2m - 15.227s,PASSED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-14 15:28:18,2022-07-14 15:28:25,7.461s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-14 15:28:19,2022-07-14 15:28:24,5.033s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-14 15:28:24,2022-07-14 15:28:24,0.035s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-14 15:28:24,2022-07-14 15:28:24,0.063s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-14 15:28:24,2022-07-14 15:28:24,0.032s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-14 15:28:24,2022-07-14 15:28:25,0.452s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 15:28:25,2022-07-14 15:28:25,0.014s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-14 15:28:25,2022-07-14 15:28:25,0.004s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-14 15:28:25,2022-07-14 15:28:25,0.142s,PASSED
+,,,,,,,
+Test Cases/web,Chrome 103.0.5060.114,,,2022-07-14 15:28:25,2022-07-14 15:30:32,2m - 6.747s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-14 15:28:26,2022-07-14 15:28:31,4.806s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 15:28:31,2022-07-14 15:28:33,1.809s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-14 15:28:33,2022-07-14 15:28:38,5.249s,PASSED
+"comment(""Verifikasi Element untuk cek setiap object yang muncul"")",Chrome 103.0.5060.114,,,2022-07-14 15:28:38,2022-07-14 15:28:38,0.134s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022""), 0, OPTIONAL)",Chrome 103.0.5060.114,,,2022-07-14 15:28:38,2022-07-14 15:28:40,1.305s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 15:28:40,2022-07-14 15:28:43,3.017s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan""), 0, OPTIONAL)",Chrome 103.0.5060.114,,,2022-07-14 15:28:43,2022-07-14 15:28:43,0.628s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 15:28:43,2022-07-14 15:28:46,3.012s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_14 Jul 2022""), 0, OPTIONAL)",Chrome 103.0.5060.114,,,2022-07-14 15:28:46,2022-07-14 15:29:20,34.007s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 15:29:20,2022-07-14 15:29:24,3.100s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_Toyota - New avanza""), 0, OPTIONAL)",Chrome 103.0.5060.114,,,2022-07-14 15:29:24,2022-07-14 15:29:56,32.251s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 15:29:56,2022-07-14 15:29:59,3.011s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/span_Received""), 0, OPTIONAL)",Chrome 103.0.5060.114,,,2022-07-14 15:29:59,2022-07-14 15:30:31,31.781s,PASSED
+takeFullPageScreenshot(),Chrome 103.0.5060.114,,,2022-07-14 15:30:31,2022-07-14 15:30:32,1.274s,PASSED

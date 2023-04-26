@@ -1,0 +1,94 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1,Chrome 103.0.5060.114,,,2022-07-15 10:23:47,2022-07-15 10:26:08,2m - 21.642s,PASSED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-15 10:23:48,2022-07-15 10:23:54,6.697s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-15 10:23:49,2022-07-15 10:23:54,4.419s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-15 10:23:54,2022-07-15 10:23:54,0.033s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-15 10:23:54,2022-07-15 10:23:54,0.066s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-15 10:23:54,2022-07-15 10:23:54,0.032s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-15 10:23:54,2022-07-15 10:23:54,0.293s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-15 10:23:54,2022-07-15 10:23:54,0.011s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-15 10:23:54,2022-07-15 10:23:54,0.005s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-15 10:23:54,2022-07-15 10:23:54,0.104s,PASSED
+,,,,,,,
+Test Cases/web,Chrome 103.0.5060.114,,,2022-07-15 10:23:54,2022-07-15 10:26:08,2m - 14.070s,PASSED
+robot = new java.awt.Robot(),Chrome 103.0.5060.114,,,2022-07-15 10:23:56,2022-07-15 10:23:56,0.229s,PASSED
+userDir = getProjectDir(),Chrome 103.0.5060.114,,,2022-07-15 10:23:56,2022-07-15 10:23:56,0.005s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-15 10:23:56,2022-07-15 10:24:01,4.531s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-15 10:24:01,2022-07-15 10:24:02,1.934s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 10:24:02,2022-07-15 10:24:08,5.103s,PASSED
+"comment(""Verifikasi Element untuk cek setiap object yang muncul"")",Chrome 103.0.5060.114,,,2022-07-15 10:24:08,2022-07-15 10:24:08,0.078s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi List Data Tracking,,2022-07-15 10:24:08,2022-07-15 10:24:08,0.580s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:08,2022-07-15 10:24:11,3.014s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Pengajuan,,2022-07-15 10:24:11,2022-07-15 10:24:12,0.530s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:12,2022-07-15 10:24:15,3.012s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_14 Jul 2022""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Tanggal Pengajuan,,2022-07-15 10:24:15,2022-07-15 10:24:15,0.493s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:15,2022-07-15 10:24:18,3.015s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/div_Toyota - New avanza""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Kendaraan yang diajukan,,2022-07-15 10:24:18,2022-07-15 10:24:19,0.569s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:19,2022-07-15 10:24:22,3.021s,PASSED
+"verifyElementPresent(findTestObject(""Verify2/Page_BcafTracking/span_Received""), 0, STOP_ON_FAILURE)",Chrome 103.0.5060.114,Verifikasi Flow Tracking Sampai di ?,,2022-07-15 10:24:22,2022-07-15 10:24:22,0.544s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking List Pengajuan.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 10:24:22,2022-07-15 10:24:24,1.124s,PASSED
+"markPassed(""Screenshoot Web Tracking List Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 10:24:24,2022-07-15 10:24:24,0.033s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 10:24:24,2022-07-15 10:24:29,5.020s,PASSED
+"click(findTestObject(""Verify2/Page_BcafTracking/div_Toyota - New avanza""))",Chrome 103.0.5060.114,Halaman Detail Pengajuan ,,2022-07-15 10:24:29,2022-07-15 10:24:29,0.713s,PASSED
+"comment(""Info Detail List Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 10:24:29,2022-07-15 10:24:29,0.006s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:29,2022-07-15 10:24:32,3.016s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/i_Received_far fa-question-circle fs-16""), 0)",Chrome 103.0.5060.114,Verifikasi Status Pengajuan Sampai Mana,,2022-07-15 10:24:32,2022-07-15 10:24:33,0.491s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:33,2022-07-15 10:24:36,3.028s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_14 Jul 2022  0134""), 0)",Chrome 103.0.5060.114,verifikasi tanggal pengajuan,,2022-07-15 10:24:36,2022-07-15 10:24:36,0.492s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:36,2022-07-15 10:24:39,3.011s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/i_Received_far fa-question-circle fs-16""), 0)",Chrome 103.0.5060.114,Verifikasi Button Info,,2022-07-15 10:24:39,2022-07-15 10:24:40,0.749s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:40,2022-07-15 10:24:43,3.012s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_Request ID220700160""), 0)",Chrome 103.0.5060.114,Verifikasi No Request ID,,2022-07-15 10:24:43,2022-07-15 10:24:44,0.495s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:44,2022-07-15 10:24:47,3.009s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_Nama Pengaju  BILLY BUMBLEBEE SIFUIAN""), 0)",Chrome 103.0.5060.114,Verifikasi nama yang mengajukan,,2022-07-15 10:24:47,2022-07-15 10:24:47,0.516s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:47,2022-07-15 10:24:50,3.012s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_Merk Kendaraan  Toyota""), 0)",Chrome 103.0.5060.114,verifikasi merk kendaraan,,2022-07-15 10:24:50,2022-07-15 10:24:51,0.578s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:51,2022-07-15 10:24:54,3.012s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_Kondisi Kendaraan  New""), 0)",Chrome 103.0.5060.114,verifikasi kondisi kendaraan,,2022-07-15 10:24:54,2022-07-15 10:24:54,0.543s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:54,2022-07-15 10:24:57,3.010s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_Tanggal Pengajuan  14 Jul 2022  0134""), 0)",Chrome 103.0.5060.114,verifikasi tanggal pengajuan dalam list kendaraan,,2022-07-15 10:24:57,2022-07-15 10:24:58,0.636s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:24:58,2022-07-15 10:25:01,3.015s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_Model Kendaraan  New avanza""), 0)",Chrome 103.0.5060.114,verifikasi model kendaraan,,2022-07-15 10:25:01,2022-07-15 10:25:02,0.545s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:02,2022-07-15 10:25:05,3.015s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/div_Nomor Polisi""), 0)",Chrome 103.0.5060.114,verifikasi nomber polisi,,2022-07-15 10:25:05,2022-07-15 10:25:05,0.557s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:05,2022-07-15 10:25:08,3.020s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking Halaman Detail Pengajuan.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 10:25:08,2022-07-15 10:25:09,0.810s,PASSED
+"markPassed(""Screenshoot Web Tracking Halaman Detail Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 10:25:09,2022-07-15 10:25:09,0.004s,PASSED
+"comment(""Halaman Detail sampai mana"")",Chrome 103.0.5060.114,,,2022-07-15 10:25:09,2022-07-15 10:25:09,0.005s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:09,2022-07-15 10:25:12,3.020s,PASSED
+"scrollToElement(findTestObject(""Status Pengajuan/ul_Realisasi""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:12,2022-07-15 10:25:13,0.582s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/ul_Received 14 07 2022 0134 WIB""), 0)",Chrome 103.0.5060.114,verifikasi pengajuan awal,,2022-07-15 10:25:13,2022-07-15 10:25:13,0.537s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:13,2022-07-15 10:25:16,3.018s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/ul_In Progress""), 0)",Chrome 103.0.5060.114,verifikasi in progress,,2022-07-15 10:25:16,2022-07-15 10:25:17,0.481s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:17,2022-07-15 10:25:20,3.009s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/ul_Waiting Approval""), 0)",Chrome 103.0.5060.114,verifikasi mengunggu di approve,,2022-07-15 10:25:20,2022-07-15 10:25:20,0.484s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:20,2022-07-15 10:25:23,3.021s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/ul_Tagihan Masuk""), 0)",Chrome 103.0.5060.114,verifikasi tagihan masuk,,2022-07-15 10:25:23,2022-07-15 10:25:24,0.508s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:24,2022-07-15 10:25:27,3.022s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/ul_Realisasi""), 0)",Chrome 103.0.5060.114,verifikasi bahwa pengajuan sudah sampai realisasi,,2022-07-15 10:25:27,2022-07-15 10:25:27,0.490s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 10:25:27,2022-07-15 10:25:32,5.010s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking Halaman Detail Pengajuan sampai mana.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 10:25:32,2022-07-15 10:25:33,0.779s,PASSED
+"markPassed(""Screenshoot Web Tracking Halaman Detail Pengajuan sampai mana"")",Chrome 103.0.5060.114,,,2022-07-15 10:25:33,2022-07-15 10:25:33,0.003s,PASSED
+"comment(""Web Tracking Info setiap pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 10:25:33,2022-07-15 10:25:33,0.005s,PASSED
+"scrollToElement(findTestObject(""Status Pengajuan/span_Received""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:33,2022-07-15 10:25:33,0.522s,PASSED
+"click(findTestObject(""Status Pengajuan/i_Received_far fa-question-circle fs-16""))",Chrome 103.0.5060.114,,,2022-07-15 10:25:33,2022-07-15 10:25:34,0.641s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/h6_Status Pengajuan""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:34,2022-07-15 10:25:35,0.628s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:35,2022-07-15 10:25:38,3.016s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/div_Aplikasi DiterimaAplikasi sudah diterima oleh tim BCA Finance""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:38,2022-07-15 10:25:38,0.548s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:38,2022-07-15 10:25:41,3.013s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/div_In ProgressAplikasi sudah diterima dan sedang dalam pemeriksaan oleh tim BCA Finance""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:41,2022-07-15 10:25:42,0.522s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:42,2022-07-15 10:25:45,3.020s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/div_Wait ApprovalAplikasi sudah disetujui oleh pejabat berwenang BCA Finance""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:45,2022-07-15 10:25:45,0.562s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:45,2022-07-15 10:25:48,3.021s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/div_Tagihan MasukPembayaran tagihan dari dealer  showroom sedang diproses""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:48,2022-07-15 10:25:49,0.480s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:49,2022-07-15 10:25:52,3.010s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/div_RealisasiTagihan sudah dibayarkan kepada dealer  showroom terkait""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:52,2022-07-15 10:25:52,0.526s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:52,2022-07-15 10:25:55,3.018s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/div_RejectedAplikasi Anda belum dapat disetujui. Info lebih lanjut silakan hubungi tim marketing terkait""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:55,2022-07-15 10:25:56,0.506s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:25:56,2022-07-15 10:25:59,3.021s,PASSED
+"verifyElementPresent(findTestObject(""Status Pengajuan/Info Status Pengajuan/Page_BcafTracking/div_CanceledAplikasi Anda batal diajukan""), 0)",Chrome 103.0.5060.114,,,2022-07-15 10:25:59,2022-07-15 10:26:00,0.588s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-15 10:26:00,2022-07-15 10:26:03,3.014s,PASSED
+"takeFullPageScreenshotAsCheckpoint(userDir + sswebviewtracking + ""Screenshoot Web Tracking Info Pengajuan.png"")",Chrome 103.0.5060.114,Melakukan screenshoot full page,,2022-07-15 10:26:03,2022-07-15 10:26:03,0.746s,PASSED
+"markPassed(""Screenshoot Web Tracking Info Pengajuan"")",Chrome 103.0.5060.114,,,2022-07-15 10:26:03,2022-07-15 10:26:03,0.002s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-15 10:26:03,2022-07-15 10:26:08,5.011s,PASSED

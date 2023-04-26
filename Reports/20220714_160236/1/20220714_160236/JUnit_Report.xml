@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="1" time="26.507" tests="2" failures="1" errors="0">
+   <testsuite name="1" tests="2" failures="1" errors="0" time="26.507" skipped="0" timestamp="2022-07-14 16:02:53" hostname="Nia Yusniati - Apandi.mshome.net" id="Test Suites/1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_160236\\1\\20220714_160236"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_160236\\1\\20220714_160236\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_160236\\1\\20220714_160236\\1657789397689.png"/>
+         <property name="hostName" value="Nia Yusniati - Apandi.mshome.net"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+         <property name="browser" value="Chrome 103.0.5060.114"/>
+         <property name="hostAddress" value="192.168.137.70"/>
+         <property name="sessionId" value="7734c95735ff9f3f5bd6ba0174a96759"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/api" time="7.361" classname="Test Cases/api" status="PASSED">
+         <system-out><![CDATA[2022-07-14 16:02:54 - [TEST_CASE][PASSED] - Test Cases/api: Test Cases/api
+
+2022-07-14 16:02:55 - [TEST_STEP][PASSED] - request = sendRequest(findTestObject("get request id", ["nik":nik])): Send request successfully
+
+2022-07-14 16:03:00 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Reports\20220714_160236\1\20220714_160236\requests\main\0.har
+
+2022-07-14 16:03:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 16:03:01 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-14 16:03:01 - [TEST_STEP][PASSED] - get_token = slurper.parseText(request.getResponseBodyContent()): null
+
+2022-07-14 16:03:01 - [TEST_STEP][PASSED] - req_id = requestId: null
+
+2022-07-14 16:03:01 - [TEST_STEP][PASSED] - request_id = req_id: null
+
+2022-07-14 16:03:01 - [TEST_STEP][PASSED] - println("token is :" + request_id): null
+
+2022-07-14 16:03:01 - [TEST_STEP][PASSED] - response_token = request.getResponseText(): null
+
+2022-07-14 16:03:01 - [TEST_STEP][PASSED] - logInfo($response_token): {"errorCode":"00","errorMessage":"sukses","requestId":"Uds4ojGLOVVSRmjOleuvbnCM0xTUdoCCk+7NRVPU5cOhqYfwYQBWtKblKG64h7KN"}
+
+2022-07-14 16:03:01 - [MESSAGE][INFO] - {"errorCode":"00","errorMessage":"sukses","requestId":"Uds4ojGLOVVSRmjOleuvbnCM0xTUdoCCk+7NRVPU5cOhqYfwYQBWtKblKG64h7KN"}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/web" time="16.455" classname="Test Cases/web" status="FAILED">
+         <failure type="FAILED" message="Test Cases/web FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify image present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at web.run(web:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657789356843.run(TempTestSuite1657789356843.groovy:36)
+Caused by: java.lang.IllegalArgumentException: This object don't have IMAGE_FILE property, please add it
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2022-07-14 16:03:01 - [TEST_CASE][FAILED] - Test Cases/web: Test Cases/web FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify image present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at web.run(web:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657789356843.run(TempTestSuite1657789356843.groovy:36)
+Caused by: java.lang.IllegalArgumentException: This object don't have IMAGE_FILE property, please add it
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2022-07-14 16:03:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-14 16:03:03 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-14 16:03:03 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-14 16:03:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-14 16:03:07 - [TEST_STEP][PASSED] - navigateToUrl("https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=" + request_id): Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=Uds4ojGLOVVSRmjOleuvbnCM0xTUdoCCk+7NRVPU5cOhqYfwYQBWtKblKG64h7KN' successfully
+
+2022-07-14 16:03:08 - [MESSAGE][PASSED] - Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=Uds4ojGLOVVSRmjOleuvbnCM0xTUdoCCk+7NRVPU5cOhqYfwYQBWtKblKG64h7KN' successfully
+
+2022-07-14 16:03:08 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-14 16:03:13 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-07-14 16:03:13 - [TEST_STEP][PASSED] - comment("Verifikasi Element untuk cek setiap object yang muncul"): Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-14 16:03:13 - [MESSAGE][INFO] - Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-14 16:03:13 - [TEST_STEP][PASSED] - verifyElementNotChecked(findTestObject("Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022"), 0, OPTIONAL): Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is not checked
+
+2022-07-14 16:03:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 16:03:14 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is not checked
+
+2022-07-14 16:03:14 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 16:03:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 16:03:17 - [TEST_STEP][FAILED] - verifyImagePresent(findTestObject("Verify2/Page_BcafTracking/img_Filter By_rounded-circle img-fluid mx-auto my-3 d-block image-icon"), STOP_ON_FAILURE): Unable to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify image present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at web.run(web:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657789356843.run(TempTestSuite1657789356843.groovy:36)
+Caused by: java.lang.IllegalArgumentException: This object don't have IMAGE_FILE property, please add it
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at Script1655460895988.run(Script1655460895988.groovy:33)
+	... 13 more
+)
+
+2022-07-14 16:03:17 - [MESSAGE][FAILED] - Unable to verify image present (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify image present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at web.run(web:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657789356843.run(TempTestSuite1657789356843.groovy:36)
+Caused by: java.lang.IllegalArgumentException: This object don't have IMAGE_FILE property, please add it
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at Script1655460895988.run(Script1655460895988.groovy:33)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_160236\\1\\20220714_160236\\1657789397689.png]]]]></system-out>
+         <system-err><![CDATA[2022-07-14 16:03:01 - [TEST_CASE][FAILED] - Test Cases/web: Test Cases/web FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify image present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at web.run(web:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657789356843.run(TempTestSuite1657789356843.groovy:36)
+Caused by: java.lang.IllegalArgumentException: This object don't have IMAGE_FILE property, please add it
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-14 16:02:53 - [TEST_SUITE][FAILED] - 1: Test Cases/web FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify image present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at web.run(web:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657789356843.run(TempTestSuite1657789356843.groovy:36)
+Caused by: java.lang.IllegalArgumentException: This object don't have IMAGE_FILE property, please add it
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2022-07-14 16:02:53 - [TEST_SUITE][FAILED] - 1: Test Cases/web FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify image present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.verifyImagePresent(VerifyImagePresentKeyword.groovy:94)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword.execute(VerifyImagePresentKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyImagePresent(WebUiBuiltInKeywords.groovy:2781)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyImagePresent$2.call(Unknown Source)
+	at web.run(web:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1657789356843.run(TempTestSuite1657789356843.groovy:36)
+Caused by: java.lang.IllegalArgumentException: This object don't have IMAGE_FILE property, please add it
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.doCall(VerifyImagePresentKeyword.groovy:78)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyImagePresentKeyword$_verifyImagePresent_closure1.call(VerifyImagePresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

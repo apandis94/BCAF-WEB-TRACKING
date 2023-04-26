@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>web - setting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7b75eb0c-03ce-47df-b534-4aa32a60f19d</testCaseGuid>
+   <variable>
+      <defaultValue>'Cu9DqhQxJZgmh3llBLh7f4F1VChl%2FCzGUYfFwETWdw4EJkoLcMhWWbM%20FhYM9af3'</defaultValue>
+      <description></description>
+      <id>b9adcd28-eea3-49f6-b74c-72c137782fcc</id>
+      <masked>false</masked>
+      <name>req_id</name>
+   </variable>
+   <variable>
+      <defaultValue>'7471094702870001'</defaultValue>
+      <description></description>
+      <id>5d5d91dc-6259-4671-97bc-5ae3ae8ee945</id>
+      <masked>false</masked>
+      <name>nik</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1,Chrome 103.0.5060.114,,,2022-07-14 13:56:25,2022-07-14 13:56:36,11.621s,PASSED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-14 13:56:25,2022-07-14 13:56:29,3.817s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-14 13:56:26,2022-07-14 13:56:29,2.467s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-14 13:56:29,2022-07-14 13:56:29,0.017s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-14 13:56:29,2022-07-14 13:56:29,0.034s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-14 13:56:29,2022-07-14 13:56:29,0.023s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-14 13:56:29,2022-07-14 13:56:29,0.128s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 13:56:29,2022-07-14 13:56:29,0.006s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-14 13:56:29,2022-07-14 13:56:29,0.001s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-14 13:56:29,2022-07-14 13:56:29,0.076s,PASSED
+,,,,,,,
+Test Cases/web,Chrome 103.0.5060.114,,,2022-07-14 13:56:29,2022-07-14 13:56:36,7.139s,PASSED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-14 13:56:30,2022-07-14 13:56:33,2.908s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 13:56:33,2022-07-14 13:56:33,0.701s,PASSED
+delay(2),Chrome 103.0.5060.114,,,2022-07-14 13:56:33,2022-07-14 13:56:35,2.078s,PASSED
+takeFullPageScreenshot(),Chrome 103.0.5060.114,,,2022-07-14 13:56:35,2022-07-14 13:56:36,0.808s,PASSED

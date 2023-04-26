@@ -1,0 +1,34 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Toyota - New avanza\u0027])[1]/following::div[3]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Upgrade Asuransi\u0027])[1]/preceding::div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20220714_141758/1/20220714_141758/Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Received\u0027])[1]/following::div[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Upgrade Asuransi\u0027])[1]/preceding::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20220714_141758/1/20220714_141758/Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Verify2/Page_BcafTracking/span_Received",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Aplikasi Pembiayaan\u0027])[1]/following::span[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Filter By\u0027])[1]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20220714_141758/1/20220714_141758/Object Repository/Verify2/Page_BcafTracking/span_Received_neighbor.png"
+    }
+  ]
+}

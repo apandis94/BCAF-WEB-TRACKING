@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="1" time="39.307" tests="2" failures="0" errors="0">
+   <testsuite name="1" tests="2" failures="0" errors="0" time="39.307" skipped="0" timestamp="2022-07-14 17:20:32" hostname="Nia Yusniati - Apandi.mshome.net" id="Test Suites/1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_172012\\1\\20220714_172012"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_172012\\1\\20220714_172012\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_172012\\1\\20220714_172012\\1657794067727.png"/>
+         <property name="hostName" value="Nia Yusniati - Apandi.mshome.net"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+         <property name="browser" value="Chrome 103.0.5060.114"/>
+         <property name="hostAddress" value="192.168.137.70"/>
+         <property name="sessionId" value="87b40bf62231beb0fd1fa379a70e81c8"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/api" time="6.556" classname="Test Cases/api" status="PASSED">
+         <system-out><![CDATA[2022-07-14 17:20:33 - [TEST_CASE][PASSED] - Test Cases/api: Test Cases/api
+
+2022-07-14 17:20:34 - [TEST_STEP][PASSED] - request = sendRequest(findTestObject("get request id", ["nik":nik])): Send request successfully
+
+2022-07-14 17:20:39 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Reports\20220714_172012\1\20220714_172012\requests\main\0.har
+
+2022-07-14 17:20:39 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 17:20:39 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-14 17:20:39 - [TEST_STEP][PASSED] - get_token = slurper.parseText(request.getResponseBodyContent()): null
+
+2022-07-14 17:20:39 - [TEST_STEP][PASSED] - req_id = requestId: null
+
+2022-07-14 17:20:39 - [TEST_STEP][PASSED] - request_id = req_id: null
+
+2022-07-14 17:20:39 - [TEST_STEP][PASSED] - println("token is :" + request_id): null
+
+2022-07-14 17:20:39 - [TEST_STEP][PASSED] - response_token = request.getResponseText(): null
+
+2022-07-14 17:20:39 - [TEST_STEP][PASSED] - logInfo($response_token): {"errorCode":"00","errorMessage":"sukses","requestId":"+ZDiN+kp/BM3CMCjzzU1jKaAGxkn8svsKW9fT4eDosgF4UKlZAu4Bp6W9OJM0LzF"}
+
+2022-07-14 17:20:39 - [MESSAGE][INFO] - {"errorCode":"00","errorMessage":"sukses","requestId":"+ZDiN+kp/BM3CMCjzzU1jKaAGxkn8svsKW9fT4eDosgF4UKlZAu4Bp6W9OJM0LzF"}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/web" time="29.797" classname="Test Cases/web" status="PASSED">
+         <system-out><![CDATA[2022-07-14 17:20:39 - [TEST_CASE][PASSED] - Test Cases/web: Test Cases/web
+
+2022-07-14 17:20:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-14 17:20:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-14 17:20:42 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-14 17:20:45 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-14 17:20:45 - [TEST_STEP][PASSED] - navigateToUrl("https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=" + request_id): Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=+ZDiN+kp/BM3CMCjzzU1jKaAGxkn8svsKW9fT4eDosgF4UKlZAu4Bp6W9OJM0LzF' successfully
+
+2022-07-14 17:20:47 - [MESSAGE][PASSED] - Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=+ZDiN+kp/BM3CMCjzzU1jKaAGxkn8svsKW9fT4eDosgF4UKlZAu4Bp6W9OJM0LzF' successfully
+
+2022-07-14 17:20:47 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-14 17:20:52 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-07-14 17:20:52 - [TEST_STEP][PASSED] - comment("Verifikasi Element untuk cek setiap object yang muncul"): Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-14 17:20:52 - [MESSAGE][INFO] - Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-14 17:20:52 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is present
+
+2022-07-14 17:20:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 17:20:53 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is present
+
+2022-07-14 17:20:53 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 17:20:56 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 17:20:56 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan' is present
+
+2022-07-14 17:20:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 17:20:57 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan' is present
+
+2022-07-14 17:20:57 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 17:21:00 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 17:21:00 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_14 Jul 2022"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022' is present
+
+2022-07-14 17:21:00 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 17:21:00 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022' is present
+
+2022-07-14 17:21:00 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 17:21:03 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 17:21:03 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Toyota - New avanza"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is present
+
+2022-07-14 17:21:03 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 17:21:04 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is present
+
+2022-07-14 17:21:04 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 17:21:07 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 17:21:07 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/span_Received"), 0, STOP_ON_FAILURE): Object 'Object Repository/Verify2/Page_BcafTracking/span_Received' is present
+
+2022-07-14 17:21:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 17:21:07 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/span_Received' is present
+
+2022-07-14 17:21:07 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+2022-07-14 17:21:08 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-14 17:21:08 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_172012\\1\\20220714_172012\\1657794067727.png]]
+
+2022-07-14 17:21:08 - [TEST_STEP][PASSED] - click(findTestObject("Verify2/Page_BcafTracking/div_Toyota - New avanza")): Object: 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is clicked on
+
+2022-07-14 17:21:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-14 17:20:32 - [TEST_SUITE][PASSED] - 1: Test Cases/web]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

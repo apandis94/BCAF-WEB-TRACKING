@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="1" time="131.451" tests="2" failures="0" errors="0">
+   <testsuite name="1" tests="2" failures="0" errors="0" time="131.451" skipped="0" timestamp="2022-07-14 14:53:41" hostname="Nia Yusniati - Apandi.mshome.net" id="Test Suites/1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_145315\\1\\20220714_145315"/>
+         <property name="logFiles" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_145315\\1\\20220714_145315\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_145315\\1\\20220714_145315\\1657785349659.png"/>
+         <property name="hostName" value="Nia Yusniati - Apandi.mshome.net"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+         <property name="browser" value="Chrome 103.0.5060.114"/>
+         <property name="hostAddress" value="192.168.137.70"/>
+         <property name="sessionId" value="a56b7c527dae33b224e7efd885088bd2"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/api" time="6.026" classname="Test Cases/api" status="PASSED">
+         <system-out><![CDATA[2022-07-14 14:53:41 - [TEST_CASE][PASSED] - Test Cases/api: Test Cases/api
+
+2022-07-14 14:53:43 - [TEST_STEP][PASSED] - request = sendRequest(findTestObject("get request id", ["nik":nik])): Send request successfully
+
+2022-07-14 14:53:47 - [MESSAGE][INFO] - HAR: C:\Users\Nia Yusniati\Git_Asa\webview-tracking\Reports\20220714_145315\1\20220714_145315\requests\main\0.har
+
+2022-07-14 14:53:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-14 14:53:47 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-14 14:53:47 - [TEST_STEP][PASSED] - get_token = slurper.parseText(request.getResponseBodyContent()): null
+
+2022-07-14 14:53:47 - [TEST_STEP][PASSED] - req_id = requestId: null
+
+2022-07-14 14:53:47 - [TEST_STEP][PASSED] - request_id = req_id: null
+
+2022-07-14 14:53:47 - [TEST_STEP][PASSED] - println("token is :" + request_id): null
+
+2022-07-14 14:53:47 - [TEST_STEP][PASSED] - response_token = request.getResponseText(): null
+
+2022-07-14 14:53:47 - [TEST_STEP][PASSED] - logInfo($response_token): {"errorCode":"00","errorMessage":"sukses","requestId":"jR6lIsCXmE8B/jaPddpyxxP76sioylrCNC2DUdrBWkv8lR6Yq7WLKMHpzaDhnVMt"}
+
+2022-07-14 14:53:47 - [MESSAGE][INFO] - {"errorCode":"00","errorMessage":"sukses","requestId":"jR6lIsCXmE8B/jaPddpyxxP76sioylrCNC2DUdrBWkv8lR6Yq7WLKMHpzaDhnVMt"}]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/web" time="122.652" classname="Test Cases/web" status="PASSED">
+         <system-out><![CDATA[2022-07-14 14:53:48 - [TEST_CASE][PASSED] - Test Cases/web: Test Cases/web
+
+2022-07-14 14:53:49 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-07-14 14:53:49 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-07-14 14:53:49 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-07-14 14:53:53 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-07-14 14:53:53 - [TEST_STEP][PASSED] - navigateToUrl("https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=" + request_id): Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=jR6lIsCXmE8B/jaPddpyxxP76sioylrCNC2DUdrBWkv8lR6Yq7WLKMHpzaDhnVMt' successfully
+
+2022-07-14 14:53:55 - [MESSAGE][PASSED] - Navigate to 'https://tracking.idofocus.co.id:25443/status-pengajuan?request_id=jR6lIsCXmE8B/jaPddpyxxP76sioylrCNC2DUdrBWkv8lR6Yq7WLKMHpzaDhnVMt' successfully
+
+2022-07-14 14:53:55 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-07-14 14:54:00 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-07-14 14:54:00 - [TEST_STEP][PASSED] - comment("Verifikasi Element untuk cek setiap object yang muncul"): Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-14 14:54:00 - [MESSAGE][INFO] - Verifikasi Element untuk cek setiap object yang muncul
+
+2022-07-14 14:54:00 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022"), 0): Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is present
+
+2022-07-14 14:54:01 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 14:54:01 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022' is present
+
+2022-07-14 14:54:01 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 14:54:04 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 14:54:04 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan"), 0): Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan' is present
+
+2022-07-14 14:54:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 14:54:05 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan' is present
+
+2022-07-14 14:54:05 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 14:54:08 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 14:54:08 - [TEST_STEP][PASSED] - verifyElementNotChecked(findTestObject("Verify2/Page_BcafTracking/div_14 Jul 2022"), 0, OPTIONAL): Object 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022' is not checked
+
+2022-07-14 14:54:08 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 14:54:39 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (.//*[normalize-space(text()) and normalize-space(.)='Toyota - New avanza'])[1]/following::div[3]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2022-07-14 14:54:39 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022'. Try using Self-healing.
+
+2022-07-14 14:54:39 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022' was broken. Propose an alternative one: '(.//*[normalize-space(text()) and normalize-space(.)='Upgrade Asuransi'])[1]/preceding::div[2]'.
+
+2022-07-14 14:54:39 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_14 Jul 2022' is not checked
+
+2022-07-14 14:54:39 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 14:54:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 14:54:42 - [TEST_STEP][PASSED] - verifyElementNotChecked(findTestObject("Verify2/Page_BcafTracking/div_Toyota - New avanza"), 0, OPTIONAL): Object 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is not checked
+
+2022-07-14 14:54:43 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 14:55:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (.//*[normalize-space(text()) and normalize-space(.)='Received'])[1]/following::div[2]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2022-07-14 14:55:14 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza'. Try using Self-healing.
+
+2022-07-14 14:55:14 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' was broken. Propose an alternative one: '(.//*[normalize-space(text()) and normalize-space(.)='Upgrade Asuransi'])[1]/preceding::div[5]'.
+
+2022-07-14 14:55:14 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/div_Toyota - New avanza' is not checked
+
+2022-07-14 14:55:14 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-07-14 14:55:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-07-14 14:55:17 - [TEST_STEP][PASSED] - verifyElementNotChecked(findTestObject("Verify2/Page_BcafTracking/span_Received"), 0, OPTIONAL): Object 'Object Repository/Verify2/Page_BcafTracking/span_Received' is not checked
+
+2022-07-14 14:55:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-07-14 14:55:49 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (.//*[normalize-space(text()) and normalize-space(.)='Aplikasi Pembiayaan'])[1]/following::span[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2022-07-14 14:55:49 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Verify2/Page_BcafTracking/span_Received'. Try using Self-healing.
+
+2022-07-14 14:55:49 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Verify2/Page_BcafTracking/span_Received' was broken. Propose an alternative one: '(.//*[normalize-space(text()) and normalize-space(.)='Filter By'])[1]/following::span[1]'.
+
+2022-07-14 14:55:49 - [MESSAGE][PASSED] - Object 'Object Repository/Verify2/Page_BcafTracking/span_Received' is not checked
+
+2022-07-14 14:55:49 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+2022-07-14 14:55:50 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-07-14 14:55:50 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Nia Yusniati\\Git_Asa\\webview-tracking\\Reports\\20220714_145315\\1\\20220714_145315\\1657785349659.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-14 14:53:41 - [TEST_SUITE][PASSED] - 1: Test Cases/web]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

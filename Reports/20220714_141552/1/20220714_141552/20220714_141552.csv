@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+1,Chrome 103.0.5060.114,,,2022-07-14 14:16:03,2022-07-14 14:16:32,28.967s,FAILED
+,,,,,,,
+Test Cases/api,Chrome 103.0.5060.114,,,2022-07-14 14:16:04,2022-07-14 14:16:08,3.836s,PASSED
+"request = sendRequest(findTestObject(""get request id"", [""nik"":nik]))",Chrome 103.0.5060.114,,,2022-07-14 14:16:05,2022-07-14 14:16:07,2.518s,PASSED
+slurper = new groovy.json.JsonSlurper(),Chrome 103.0.5060.114,store json response to variable,,2022-07-14 14:16:07,2022-07-14 14:16:07,0.021s,PASSED
+get_token = slurper.parseText(request.getResponseBodyContent()),Chrome 103.0.5060.114,,,2022-07-14 14:16:07,2022-07-14 14:16:07,0.040s,PASSED
+req_id = requestId,Chrome 103.0.5060.114,define / field api,,2022-07-14 14:16:07,2022-07-14 14:16:07,0.021s,PASSED
+request_id = req_id,Chrome 103.0.5060.114,store var to global variable,,2022-07-14 14:16:07,2022-07-14 14:16:08,0.136s,PASSED
+"println(""token is :"" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 14:16:08,2022-07-14 14:16:08,0.007s,PASSED
+response_token = request.getResponseText(),Chrome 103.0.5060.114,show response to report in test suite,,2022-07-14 14:16:08,2022-07-14 14:16:08,0.002s,PASSED
+logInfo($response_token),Chrome 103.0.5060.114,,,2022-07-14 14:16:08,2022-07-14 14:16:08,0.059s,PASSED
+,,,,,,,
+Test Cases/web,Chrome 103.0.5060.114,,,2022-07-14 14:16:08,2022-07-14 14:16:32,24.624s,FAILED
+"openBrowser("""")",Chrome 103.0.5060.114,,,2022-07-14 14:16:08,2022-07-14 14:16:11,2.916s,PASSED
+"navigateToUrl(""https://tracking.idofocus.co.id:25443/status-pengajuan?request_id="" + request_id)",Chrome 103.0.5060.114,,,2022-07-14 14:16:11,2022-07-14 14:16:13,1.409s,PASSED
+delay(5),Chrome 103.0.5060.114,,,2022-07-14 14:16:13,2022-07-14 14:16:18,5.060s,PASSED
+"verifyElementNotChecked(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan Received  Toyota - New avanza 14 Jul 2022 Upgrade Asuransi Polis Terbit  TOYOTA - AGYA B 8768 KUH12 Jul 2022""), 0)",Chrome 103.0.5060.114,,,2022-07-14 14:16:18,2022-07-14 14:16:18,0.471s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 14:16:18,2022-07-14 14:16:21,3.016s,PASSED
+"verifyElementNotChecked(findTestObject(""Verify2/Page_BcafTracking/div_Aplikasi Pembiayaan""), 0)",Chrome 103.0.5060.114,,,2022-07-14 14:16:21,2022-07-14 14:16:22,0.434s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 14:16:22,2022-07-14 14:16:25,3.011s,PASSED
+"verifyElementNotChecked(findTestObject(""Verify2/Page_BcafTracking/div_14 Jul 2022""), 0)",Chrome 103.0.5060.114,,,2022-07-14 14:16:25,2022-07-14 14:16:25,0.458s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 14:16:25,2022-07-14 14:16:28,3.010s,PASSED
+"verifyElementNotChecked(findTestObject(""Verify2/Page_BcafTracking/div_Toyota - New avanza""), 0)",Chrome 103.0.5060.114,,,2022-07-14 14:16:28,2022-07-14 14:16:29,0.423s,PASSED
+delay(3),Chrome 103.0.5060.114,,,2022-07-14 14:16:29,2022-07-14 14:16:32,3.011s,PASSED
+"verifyElementChecked(findTestObject(""Verify2/Page_BcafTracking/span_Received""), 0)",Chrome 103.0.5060.114,,,2022-07-14 14:16:32,2022-07-14 14:16:32,0.668s,FAILED
